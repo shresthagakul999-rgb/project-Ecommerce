@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FARMERS ONLINE SHOP</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img onclick="window.location.href='index.html'" src="./img/Screenshot 2025-06-09 121902 (1).png" alt="">
+            </div>
+            <div class="sbar">
+                <input class="text" type="search" placeholder="Search...">
+                    <button class="search">
+                        <i class="fa-solid fa-search"></i>
+                    </button>
+            </div>
+            <div class="links">
+                <ul>
+                    <li>
+                        <a onclick="showLogin()" class="login-icon" href="#">
+                            <i class="fa-solid fa-user"></i>
+                            <span class="navText">LOGIN/SIGN-UP</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#crt" onclick="showCart()">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="navText">CART</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="cnts">
+            <div class="cnt1" onclick="showTools()">TOOLS</div>
+            <div class="cnt2" onclick="showPlants()">PLANTS</div>
+        </div>
+    </header>
+    <main>
+        <div class="toolsSection" id="toolsSection">
+            <div class="tool">
+                <div class="imgdiv">
+                    <img src="https://www.inspireuplift.com/resizer/?image=https://cdn.inspireuplift.com/uploads/images/seller_products/4/1709808924_inspire-uplift-professional-tree-grafter-with-pruning-shears-kit-black.jpg&width=600&height=600&quality=90&format=auto&fit=pad"
+                        width="100%" height="100%" alt="Tool 1">
+                </div>
+                <span class="price">RS. 400</span>
+                <h3>Tree Grafter</h3>
+                <p class="imp-txt">Precision cuts for perfect plant grafts</p>
+                <p>Professional tool for effortless grafting, ensuring healthy growth and strong plant unions.</p>
+                <button class="addToCart">Add to Cart</button>
+            </div>
+            <div class="tool">
+                <div class="imgdiv">
+                    <img src="./img/ChatGPT Image Aug 11, 2025, 10_56_04 AM.png" alt="Tool 2" width="100%" height="100%">
+                </div>
+                <span class="price">RS. 200</span>
+                <h3>Garden Gloves</h3>
+                <p class="imp-txt">Dig, plant, and weed with ease</p>
+                <p>Durable gloves with claw tips for quick digging and comfortable gardening tasks.</p>
+                <button class="addToCart">Add to Cart</button>
+            </div>
+            <div class="tool">
+                <div class="imgdiv">
+                    <img src="./img/ChatGPT Image Aug 11, 2025, 10_36_34 AM.png" width="100%" height="100%" alt="Tool 3">
+                </div>
+                <span class="price">RS. 150</span>
+                <h3>Washing Nozzle</h3>
+                <p class="imp-txt">Powerful spray for healthy, happy plants</p>
+                <p>Adjustable nozzle delivers gentle mist or strong stream for optimal plant care.</p>
+                <button class="addToCart">Add to Cart</button>
+            </div>
+            <div class="tool">
+                <div class="imgdiv">
+                    <img src="https://cdn2.inspireuplift.com/wp-content/uploads/2019/12/Garden-Hoe-1.jpg" width="100%" height="100%" alt="Tool 4">
+                </div>
+                <span class="price">RS. 500</span>
+                <h3>Garden Hoe</h3>
+                <p class="imp-txt">Sharp edge for easy soil breaking</p>
+                <p>Strong, durable hoe perfect for weeding, cultivating, and preparing garden beds.</p>
+                <button class="addToCart">Add to Cart</button>
+            </div>
+            <div class="tool">
+                <div class="imgdiv">
+                    <img src="https://cdn2.inspireuplift.com/wp-content/uploads/2019/12/Lawnmower-1.jpg" width="100%" height="100%" alt="Tool 5">
+                </div>
+                <span class="price">RS. 3700</span>
+                <h3>Lawnmower</h3>
+                <p class="imp-txt">Clean, even cuts for lush lawns</p>
+                <p>Powerful mower designed for smooth operation and beautifully manicured green spaces.</p>
+                <button class="addToCart">Add to Cart</button>
+            </div>
+            <div class="tool">
+                <div class="imgdiv">
+                    <img src="https://cdn2.inspireuplift.com/wp-content/uploads/2019/12/Rake-1.jpg" width="100%" height="100%" alt="Tool 6">
+                </div>
+                <span class="price">RS. 400</span>
+                <h3>Rake</h3>
+                <p class="imp-txt">Gather leaves and debris with ease</p>
+                <p>Lightweight rake ideal for clearing gardens, lawns, and keeping soil smooth.</p>
+                <button class="addToCart">Add to Cart</button>
+            </div>
+            <div class="tool">
+                <div class="imgdiv">
+                 <img src="./img/ChatGPT Image Aug 11, 2025, 09_34_48 AM.png" width="100%" height="100%" alt="">
+                </div>
+                <span class="price">RS. 300</span>
+                <h3>Sickle</h3>
+                <p class="imp-txt">Sharp curve for effortless harvesting</p>
+                <p>Durable hand tool for cutting crops, grass, and clearing overgrown weeds.</p>
+                <button class="addToCart">Add to Cart</button>
+            </div>
+             <div class="tool">
+                <div class="imgdiv">
+                 <img src="https://img.drz.lazcdn.com/static/np/p/a8832667e4b16b5584b9fba93874f191.jpg_720x720q80.jpg_.webp" width="100%" height="100%" alt="">
+                </div>
+                <span class="price">RS. 450</span>
+                <h3>Watering Can</h3>
+                <p class="imp-txt">Easy Plant Watering Tool</p>
+                <p>Lightweight watering can with a long spout for controlled watering.</p>
+                <button class="addToCart">Add to Cart</button>
+            </div>
+             <div class="tool">
+                <div class="imgdiv">
+                 <img src="https://img.drz.lazcdn.com/static/np/p/e64cbbd603b743ff9ff0871287b6190d.jpg_720x720q80.jpg_.webp" width="100%" height="100%" alt="">
+                </div>
+                <span class="price">RS. 900</span>
+                <h3>Hanging Planter</h3>
+                <p class="imp-txt">Perfect for Vertical Gardening</p>
+                <p>Stylish planter designed to hang, saving space while adding greenery to any area.</p>
+                <button class="addToCart">Add to Cart</button>
+            </div>
+             <div class="tool">
+                <div class="imgdiv">
+                 <img src="https://img.drz.lazcdn.com/static/np/p/dd540b2d032b96644187a88af8e3feda.jpg_720x720q80.jpg_.webp" width="100%" height="100%" alt="">
+                </div>
+                <span class="price">RS. 250</span>
+                <h3>Garden Sprinkler</h3>
+                <p class="imp-txt">360° Water Coverage for Your Lawn</p>
+                <p>Effortlessly water your entire lawn with this versatile sprinkler.</p>
+                <button class="addToCart">Add to Cart</button>
+            </div>
+             <div class="tool">
+                <div class="imgdiv">
+                 <img src="https://img.drz.lazcdn.com/static/np/p/7d6e7b79cce6fd37a6006f165dd4da30.jpg_720x720q80.jpg_.webp" width="100%" height="100%" alt="">
+                </div>
+                <span class="price">RS. 99</span>
+                <h3>Plant Grow Bag</h3>
+                <p class="imp-txt">Flexible Grow Bags for Better Plant Growth</p>
+                <p>Perfect for growing herbs, vegetables, and flowers in limited spaces.</p>
+                <button class="addToCart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="hide" id="plantsSection">
+            <div class="plant">
+                <div class="imgdiv">
+                    <img src="https://www.plantingtree.com/cdn/shop/products/meyer-lemon-tree_600x600.jpg?v=1629140237" width="100%" height="100%" alt="plant 1">
+                </div>
+                <h3>Meyer Lemon Plant</h3>
+                <p class="imp-txt">Sweet citrus, perfect for any season.</p>
+                <p>juicy lemons with a hint of orange flavor. Thrives indoors or outdoors for year-round harvests.</p>
+                <button class="addToCart">Add to Cart</button>
+                <span class="price">RS. 900</span>
+            </div>
+            <div class="plant">
+                <div class="imgdiv">
+                    <img src="https://www.plantingtree.com/cdn/shop/products/2265486_600x600.jpg?v=1612126935" width="100%" height="100%" alt="plant 2">
+                </div>
+                <h3>Arabica Coffee Plant</h3>
+                <p class="imp-txt">Grow coffee right in your home.</p>
+                <p>Glossy green leaves and fragrant white blooms produce your own coffee beans — beautiful and productive.</p>
+                <button class="addToCart">Add to Cart</button>
+                <span class="price">RS. 200</span>
+            </div>
+            <div class="plant">
+                <div class="imgdiv">
+                    <img src="https://www.plantingtree.com/cdn/shop/products/blood-orange-tree2_600x600.jpg?v=1625072958" width="100%" height="100%" alt="plant 3">
+                </div>
+                <h3>Blood Orange Plant</h3>
+                <p class="imp-txt">Vibrant fruit with rich berry flavor</p>
+                <p>Has bright red inside and a sweet, slightly tangy taste. A colorful and tasty fruit for your garden.</p>
+                <button class="addToCart">Add to Cart</button>
+                <span class="price">RS. 1200</span>
+            </div>
+            <div class="plant">
+                <div class="imgdiv">
+                    <img src="https://www.plantingtree.com/cdn/shop/products/2255_600x600.jpg?v=1612123893" width="100%" height="100%" alt="plant 4">
+                </div>
+                <h3>Rosemary Plant</h3>
+                <p class="imp-txt">Fresh flavor, fragrant leaves, easy care.</p>
+                <p>Perfect for cooking, teas, and home gardens. Adds beauty and aroma indoors or outdoors.</p>
+                <button class="addToCart">Add to Cart</button>
+                <span class="price">RS. 500</span>
+            </div>
+            <div class="plant">
+                <div class="imgdiv">
+                    <img src="https://www.plantingtree.com/cdn/shop/products/peace-lily_600x600.jpg?v=1654112674" width="100%" height="100%" alt="plant 5">
+                </div>
+                <h3>Peace Lily Plant</h3>
+                <p class="imp-txt">Elegant blooms, air-purifying green beauty.</p>
+                <p>Low-maintenance plant that thrives in low light. Naturally cleans the air and brightens any room.</p>
+                <button class="addToCart">Add to Cart</button>
+                <span class="price">RS. 1500</span>
+            </div>
+            <div class="plant">
+                <div class="imgdiv">
+                    <img src="https://www.plantingtree.com/cdn/shop/products/5812647_600x600.jpg?v=1614289103" width="100%" height="100%" alt="plant 6">
+                </div>
+                <h3>Sago Palm Tree</h3>
+                <p class="imp-txt">Tropical charm, compact and hardy.</p>
+                <p>Adds exotic style to home or patio. Thrives with minimal care and striking green fronds.</p>
+                <button class="addToCart">Add to Cart</button>
+                <span class="price">RS. 1200</span>
+            </div>
+            <div class="plant">
+                <div class="imgdiv">
+                    <img src="https://img.drz.lazcdn.com/static/np/p/d508aabb45dc52a5b64556f55b9337c6.jpg_720x720q80.jpg_.webp" width="100%" height="100%" alt="plant 7">
+                </div>
+                <h3>Strawberry Plant</h3>
+                <p class="imp-txt">Fresh, Sweet Strawberries from Garden</p>
+                <p>Easy-to-grow fruit plant that produces juicy, flavorful strawberries.</p>
+                <button class="addToCart">Add to Cart</button>
+                <span class="price">RS.100</span>
+            </div>
+            <div class="plant">
+                <div class="imgdiv">
+                    <img src="https://img.drz.lazcdn.com/static/np/p/ad27f9824c61f0ca62355987e3c4d545.jpg_720x720q80.jpg_.webp" width="100%" height="100%" alt="plant 7">
+                </div>
+                <h3>Celery Seeds</h3>
+                <p class="imp-txt">Nutritious Celery for Home Gardening</p>
+                <p>High-quality celery seeds ideal for growing fresh, crisp celery in your garden.</p>
+                <button class="addToCart">Add to Cart</button>
+                <span class="price">RS.1100</span>
+            </div>
+            <div class="plant">
+                <div class="imgdiv">
+                    <img src="https://img.drz.lazcdn.com/static/np/p/167b4e20c42d45ddc384953577129aca.jpg_720x720q80.jpg_.webp" width="100%" height="100%" alt="plant 7">
+                </div>
+                <h3>Lotus Flower Plant</h3>
+                <p class="imp-txt">Elegant Lotus for Peaceful Garden Decor</p>
+                <p>Beautiful aquatic plant with delicate blooms that adds a calm and natural charm to ponds, water bowls, or decorative containers.</p>
+                <button class="addToCart">Add to Cart</button>
+                <span class="price">RS.1500</span>
+            </div>
+            <div class="plant">
+                <div class="imgdiv">
+                    <img src="https://img.drz.lazcdn.com/static/np/p/490e4d56907696d53ec17aa73e52e9f8.png_720x720q80.png_.webp" width="100%" height="100%" alt="plant 7">
+                </div>
+                <h3>Dragon Fruit Plant</h3>
+                <p class="imp-txt">Exotic Cactus with Sweet Tropical Fruits</p>
+                <p>Fast-growing climbing cactus that produces vibrant dragon fruits.</p>
+                <button class="addToCart">Add to Cart</button>
+                <span class="price">RS.400</span>
+            </div>
+        </div>
+    </main>
+    <!-- ..KYUTY. -->
+    <div class="mainLogin">
+        <span class="iconClose">
+                <ion-icon onclick="hideLogin()" name="close"></ion-icon>
+            </span>
+        <div class="loginOptions">
+            <h2 class="h22" onclick="loginTab()">Login</h2>
+            <h2 class="h2" onclick="signupTab()">Sign Up</h2>
+        </div>
+        <div class="form">
+            <form id="loginForm">
+                <div class="login">
+                    <div class="input">
+                        <span class="icon">
+                                <ion-icon name="mail"></ion-icon>
+                            </span>
+                        <input type="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input">
+                        <span class="icon">
+                                <ion-icon name="lock-closed"></ion-icon>
+                            </span>
+                        <input id="loginPassword" type="password" required minlength="8" pattern=".{8,}" title="Password must be at least 8 characters">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="forgotRemember">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="LOther">
+                        <p>
+                            Don't have an account?
+                            <a onclick="signupTab()" class="LOLink">Sign Up</a>
+                        </p>
+                    </div>
+                    <div class="social">
+                        <span>or login with</span>
+                        <div class="icons">
+                            <ion-icon name="logo-google" style="color: rgb(171, 0, 0)" onclick="window.open('https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3Dsign_in_no_continue%26pli%3D1&ec=GAlAwAE&hl=en_GB&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S235712533%3A1756614718695574', '_parent')"></ion-icon>
+                            <ion-icon name="logo-facebook" style="color: #008efa" onclick="window.open('https://www.facebook.com/login', '_parent')"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <form id="signupForm">
+                <div class="login signUp">
+                    <div class="input">
+                        <span class="icon">
+                                <ion-icon name="mail"></ion-icon>
+                            </span>
+                        <input type="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input">
+                        <span class="icon">
+                                <ion-icon name="lock-closed"></ion-icon>
+                            </span>
+                        <input id="signupPassword" type="password" required minlength="8" pattern=".{8,}" title="Password must be at least 8 characters">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="input">
+                        <span class="icon">
+                                <ion-icon name="lock-closed"></ion-icon>
+                            </span>
+                        <input id="signupConfirmPassword" type="password" required minlength="8" pattern=".{8,}" title="Password must be at least 8 characters" oninput="this.setCustomValidity(this.value !== document.getElementById('signupPassword').value ? 'Passwords do not match' : '')">
+                        <label for="password">Confirm Password</label>
+                    </div>
+                    <button type="submit" class="btn">SignUp</button>
+                    <div class="LOther">
+                        <p>
+                            Already have an account?
+                            <a onclick="loginTab()" class="LOLink">Login</a>
+                        </p>
+                    </div>
+                    <div class="social">
+                        <span>or login with</span>
+                        <div class="icons">
+                            <ion-icon name="logo-google" style="color: rgb(171, 0, 0)" onclick="window.open('https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3Dsign_in_no_continue%26pli%3D1&ec=GAlAwAE&hl=en_GB&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S235712533%3A1756614718695574', '_parent')"></ion-icon>
+                            <ion-icon name="logo-facebook" style="color: #008efa" onclick="window.open('https://www.facebook.com/login', '_parent')"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <div class="mainCart" id="crt">
+        <span class="iconClose" onclick="hideCart()">
+            <ion-icon name="close"></ion-icon>
+        </span>
+        <h2>Shopping Cart</h2>
+        <div class="cartItems"></div>
+        <div class="cartTotal">
+            <span>
+                Total: ₹
+                <span id="totalAmount">0.00</span>
+            </span>
+            <button class="checkoutBtn">Checkout</button>
+        </div>
+    </div>
+    <!-- Product Info Modal -->
+    <div class="productInfoModal hide" id="productInfoModal">
+        <div class="PInfoMDL">
+            <span class="iconClose2" onclick="hideProductInfo()">x</span>
+            <div class="productInfoContent">
+                <!-- Content will be filled by JS -->
+            </div>
+        </div>
+    </div>
+    <div class="checkout" id="checkoutModal">
+        <div class="ch-mdl">
+            <span id="ICcheckout" class="iconClosee" onclick="hideCheckout()">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="cheakoutContent">
+                <h2>Checkout</h2>
+                <form id="checkoutForm">
+                    <div class="input">
+                        <input type="text" placeholder="ENTER FULL NAME" id="name" required>
+                    </div>
+                    <div class="input">
+                        <input type="text" id="address" placeholder="ENTER ADDRESS" required>
+                    </div>
+                    <div class="input">
+                        <input type="text" id="city" placeholder="ENTER CITY" required>
+                    </div>
+                    <div class="input">
+                        <input type="text" id="postalCode" placeholder="ENTER POSTAL CODE" required>
+                    </div>
+                    <div class="input">
+                        <input type="text" id="country" placeholder="ENTER COUNTRY" required>
+                    </div>
+                    <button type="submit" class="btn">Place Order</button>
+                </form>
+                <div class="orderSummary">
+                    <h3>Order Summary</h3>
+                    <p>Items:</p>
+                    <ul id="orderItemsList">
+                        <!-- Order items will be dynamically inserted here -->
+                    </ul>
+                    <p>
+                        Total:
+                        <span id="orderTotalAmount">0.00</span>
+                    </p>
+                </div>
+                <div class="orderConfirmation hide" id="orderConfirmation">
+                    <h3>Thank you for your order!</h3>
+                    <p>Your order has been placed successfully.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <div class="contactItem">
+                    <div>
+                        <h4>Email</h4>
+                        <a href="mailto:shresthagakul999@gmail.com">shresthagakul999@gmail.com</a>
+                    </div>
+                    <div>
+                        <h4>Phone</h4>
+                        <a href="tel:+9779863221897">+977 9863221897</a>
+                    </div>
+                </div>
+                <!-- <ul>
+            <li>Email: <a href="mailto:shresthagakul999@gmail.com">shresthagakul999@gmail.com</a></li>
+            <li>Phone: <a href="tel:+9779863221897">+977 9863221897</a></li>
+            <li>Address: <span>Kathmandu, Nepal</span></li>
+          </ul> -->
+            </div>
+            <div class="footer-section social">
+                <h2>Follow Us</h2>
+                <div class="icons">
+                    <ion-icon name="logo-facebook" onclick="window.open('https://www.facebook.com/share/1B5BsrF16B/', '_blank')"></ion-icon>
+                    <ion-icon name="logo-tiktok" onclick="window.open('https://www.tiktok.com/@shrestha_st?is_from_webapp=1&sender_device=pc', '_blank')"></ion-icon>
+                    <ion-icon name="logo-instagram" onclick="window.open('https://www.instagram.com/shrestha.gakul?igsh=MWF4eHJvZTB4azFlNg==', '_blank')"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+    <script src="./cart.js"></script>
+</body>
+
+</html>
